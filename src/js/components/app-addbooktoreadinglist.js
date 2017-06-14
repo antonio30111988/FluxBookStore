@@ -4,10 +4,12 @@ var AppActions = require('../actions/app-actions');
 //create a AddBookToLibrary component
 var AddBookToReadingList = React.createClass({
         handler: function(){
+        	//call action then action  dispacthed  to add book
           AppActions.addBook(this.props.item)
         },
+        //borrow book functionality
         render:function(){
-          return <button onClick={this.handler}>I want to borrow </button>
+          return <button onClick={this.handler}>Borrow book. </button>
         }
 
 });

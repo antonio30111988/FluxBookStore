@@ -81,7 +81,7 @@ var AppStore = assign(EventEmitter.prototype, {
   },
 
   addChangeListener: function(callback){
-    //eventEmmit.on ()
+    //eventEmmiter.on ()
     this.on(CHANGE_EVENT, callback)
   },
 
