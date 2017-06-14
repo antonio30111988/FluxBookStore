@@ -9,6 +9,8 @@ methods are defined, in the flux library_app, within the dispatcher class. */
 var Dispatcher = require('flux').Dispatcher;
 var assign = require('react/lib/Object.assign');
 
+
+//create/assign new Dispatcher object
 //handleViewAction method - passes the action to be passed to the registered store via
 //the callback.
 var AppDispatcher = assign(new Dispatcher(),{
